@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
             imageDice1.setImageResource(dropDice())
             imageDice2.setImageResource(dropDice())
         }
+
+        val playerName = getIntent().getStringExtra("playerName")
+        val playerNameTextView = findViewById<TextView>(R.id.textViewGreeting)
+        playerNameTextView.text = "Olá, $playerName !"
     }
 
     fun dropDice(): Int {
@@ -35,7 +40,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-
 
     }
 

@@ -8,13 +8,14 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/textInputPersonName"
         android:layout_width="226dp"
         android:layout_height="58dp"
         android:contentDescription="@string/placeholder_register_input"
         android:autofillHints="@string/placeholder_register_input"
         android:ems="10"
         android:inputType="textPersonName"
+        android:hint="@string/placeholder_register_input"
         android:text="@string/placeholder_register_input"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +35,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textInputPersonName"
         app:layout_constraintVertical_bias="0.501" />
 </androidx.constraintlayout.widget.ConstraintLayout>
