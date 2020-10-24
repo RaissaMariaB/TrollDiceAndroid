@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".RegisterActivity">
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/textInputPersonName"
         android:layout_width="226dp"
         android:layout_height="58dp"
-        android:contentDescription="@string/placeholder_register_input"
         android:autofillHints="@string/placeholder_register_input"
+        android:contentDescription="@string/placeholder_register_input"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/placeholder_register_input"
+        android:hint="@string/placeholder_register_input"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -27,13 +27,25 @@
         android:layout_width="123dp"
         android:layout_height="56dp"
         android:backgroundTint="#009688"
+        android:hint="@string/play_the_dice"
         android:text="@string/play_button"
         android:textColor="@color/default_white"
         android:textSize="18sp"
-        android:hint="@string/play_the_dice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textInputPersonName"
         app:layout_constraintVertical_bias="0.501" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/textInputPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
