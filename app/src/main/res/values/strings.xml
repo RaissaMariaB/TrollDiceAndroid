@@ -3,4 +3,7 @@
     <string name="text_value_dice1">Dado 2</string>
     <string name="label_button_dice">Lançar Dados</string>
     <string name="text_value_dice2">Dado 1</string>
+    <string name="placeholder_register_input">Insira seu nome</string>
+    <string name="play_button">Play</string>
+    <string name="play_the_dice">começe a jogar seus dados após preencher seu nome</string>
 </resources>
