@@ -17,12 +17,13 @@ class MainActivity : AppCompatActivity() {
 
 
         buttonRollDice.setOnClickListener {
-            val imageNumberDice1: Int = imagePicker(dropDice())
-            val imageNumberDice2: Int = imagePicker(dropDice())
-
-            imageDice1.setImageResource(imageNumberDice1)
-            imageDice2.setImageResource(imageNumberDice2)
+            imageDice1.setImageResource(dropDice())
+            imageDice2.setImageResource(dropDice())
         }
+    }
+
+    fun dropDice(): Int {
+       return imagePicker(numberGenerator())
     }
 
     private fun imagePicker(num: Int): Int {
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun dropDice(): Int {
+    fun numberGenerator(): Int {
         return (1..6).random()
     }
 }
