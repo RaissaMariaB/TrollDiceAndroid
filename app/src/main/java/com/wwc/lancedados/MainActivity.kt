@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         buttonRollDice.setOnClickListener {
             val imageNumberDice1: Int = imagePicker(dropDice())
             val imageNumberDice2: Int = imagePicker(dropDice())
+
             imageDice1.setImageResource(imageNumberDice1)
             imageDice2.setImageResource(imageNumberDice2)
         }
